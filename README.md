@@ -1,5 +1,7 @@
 # Language Stats
 
+![Language Stats panel](resources/image.png)
+
 Language Stats is a Visual Studio Code extension that gives you an instant, accurate picture of what your project is actually built with. It lives quietly in its own panel in the Activity Bar and shows you a clean, visual breakdown of every language, format, and file type in your workspace — without ever leaving your editor.
 
 ## Why it exists

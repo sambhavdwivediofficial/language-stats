@@ -65,7 +65,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sambhavdwivediofficial/language-stats.git"
+    "url": "https://github.com/sambhavdwivediofficial/language-stats.git"
   },
   "keywords": ["language stats", "code statistics", "workspace analyzer", "github style", "language breakdown"],
   "author": "Sambhav Dwivedi",

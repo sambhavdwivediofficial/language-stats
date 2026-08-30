@@ -1,0 +1,77 @@
+{
+  "name": "language-stats",
+  "displayName": "Language Stats",
+  "description": "Visual, byte-accurate language statistics for your workspace — right inside VS Code.",
+  "version": "0.0.1",
+  "publisher": "sambhavdwivedi",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "resources/icon.png",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "languageStats",
+          "title": "Language Stats",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "languageStats": [
+        {
+          "type": "webview",
+          "id": "languageStats.dashboard",
+          "name": "Language Stats",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "languageStats.refresh",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "languageStats.refresh",
+          "when": "view == languageStats.dashboard",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "undici-types": "^5.26.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambhavdwivediofficial/language-stats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sambhavdwivediofficial/language-stats/issues"
+  },
+  "homepage": "https://github.com/sambhavdwivediofficial/language-stats#readme"
+}
